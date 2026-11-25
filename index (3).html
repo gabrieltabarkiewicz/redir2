@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="robots" content="noindex, nofollow">
+  <title>Redirecionando...</title>
+  <script>
+    (function () {
+      const mobileURL = 'https://monster-mx.vercel.app/presell-quiz';
+      const desktopURL = 'https://www.monsterenergy.com/pt-br/';
+      const isMobile = /Android|iPhone|iPad|iPod|Mobile/i.test(navigator.userAgent);
+      const destination = new URL(isMobile ? mobileURL : desktopURL);
+      const incoming = new URLSearchParams(window.location.search);
+      incoming.forEach((value, key) => destination.searchParams.append(key, value));
+      window.location.replace(destination.toString());
+    })();
+  </script>
+</head>
+<body>
+  <p>Redirecionando, aguarde...</p>
+</body>
+</html>
