@@ -8,7 +8,7 @@
   <script>
     (function () {
       const mobileURL = 'https://monster-mx.vercel.app/presell-quiz';
-      const desktopURL = 'https://www.monsterenergy.com/pt-br/';
+      const desktopURL = 'https://monster-mx.vercel.app/presell';
       const isMobile = /Android|iPhone|iPad|iPod|Mobile/i.test(navigator.userAgent);
       const destination = new URL(isMobile ? mobileURL : desktopURL);
       const incoming = new URLSearchParams(window.location.search);
